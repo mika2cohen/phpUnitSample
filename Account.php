@@ -24,7 +24,7 @@ class Account {
     public function withdraw($amount)
     {
         if($this->amount-$amount<0)
-            throw new Exception("Ammount can't be negative");
+            throw new Exception("Ammount can't be positive");
 
         $this->amount-=$amount;
     }
